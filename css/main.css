@@ -1,4 +1,3 @@
-
 /* General */
 :root{
   --primary: #3758CF;
@@ -7,6 +6,63 @@
   --secondary-light: #788DDB;
   --secondary-dark: #0B2EAD;
 }
+
+/* Navigation And Footer */
+.nav-container{
+  width: 100%;
+  background-color: var(--primary);
+}
+
+.navbar{
+  display: grid;
+  grid-template-columns: 0.5fr auto 0.3fr;
+  align-items: center;
+  height: 80px;
+  width: 90%;
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+#navbar-logo{
+  color: var(--light-contrast);
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.toggle-menu{
+  justify-self: end;
+}
+
+.nav-menu{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  list-style: none;
+  text-align: center;
+  width: 70%;
+  justify-self: end;
+}
+
+.nav-link{
+  color: var(--light-contrast);
+  text-decoration: none;
+}
+
+.nav-link .active{
+  color: black;
+}
+
+.nav-link:hover{
+  color: var(--secondary-light);
+}
+
+.menu-toggle .bar{
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background: var(--light-contrast);
+
+}
+
 
 /* Home */
 
