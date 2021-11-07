@@ -7,6 +7,11 @@
   --secondary-dark: #0B2EAD;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Navigation And Footer ******************************************************************/
 .nav-container{
   width: 100%;
