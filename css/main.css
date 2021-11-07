@@ -12,7 +12,8 @@ a{
   color: inherit;
 }
 
-/* Navigation And Footer ******************************************************************/
+
+/* Navigation ******************************************************************/
 .nav-container{
   width: 100%;
   position: relative;
@@ -21,7 +22,7 @@ a{
 .navbar{
   width: 100%;
   max-width: 1720px;
-  height: 80px;
+  height: 7vh;
   display: grid;
   grid-template-columns: repeat(3, auto);
   margin: 0 auto;
@@ -43,7 +44,7 @@ a{
   background: var(--dark-contrast);
   position: absolute;
   margin: 0;
-  top: 80px;
+  top: 7vh;
   left: -100%;
   opacity: 0;
   transition: all 0.5s ease;
@@ -129,6 +130,37 @@ a{
     width: 0px;
     height: 0px;
   }
+}
+
+/* Footer ******************************************************************/
+footer{
+  width: 100%;
+  bottom: 0;
+  background-color: var(--primary);
+  text-align: center;
+}
+.icons{
+  width: 30%;
+  margin: 0 auto;
+}
+.icons ul{
+  display: grid;
+  height: 7vh;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+}
+.icons li{
+  align-self: center;
+}
+.icons i{
+  cursor: pointer;
+  justify-self: center;
+  color: var(--light-contrast);
+  font-size: 20px;
+}
+.icons i:hover{
+  color: var(--secondary-light);
+  transition: all 0.4s ease-out;
 }
 
 
