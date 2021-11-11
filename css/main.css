@@ -12,30 +12,39 @@ body{
   font-size: 16px;
 }
 h1{
-  font-size: 6.37em;
+  font-size: 4.909em;
 }
 h2{
-  font-size: 3.821em;
+  font-size: 3.034em;
 }
 h3{
-  font-size: 2.292em;
+  font-size: 1.875em;
 }
 h4{
-  font-size: 1.375em;
-}
+  font-size: 1.159em;
+} 
 a{
+  font-size: 1.159;
   text-decoration: none;
   color: inherit;
 }
 @media only screen and (min-width: 768px){
-  h2{
-    font-size: 6.37em;
+  h1{
+    font-size: 7.942em;
   }
+  h2{
+    font-size: 4.909em;
+  }
+  h3{
+    font-size: 3.034em;
+  }
+  
   h4{
-    font-size: 2.292em;
+    font-size: 1.875em;
   }
   a{
-    font-size: 1.375em;
+    font-size: 1.875em;
+  }
 }
 
 /* Button Styles */
@@ -64,6 +73,7 @@ button{
   margin: 0 auto;
 }
 #navbar-logo{
+  font-size: 1.875em;
   color: var(--light-contrast);
   cursor: pointer;
   grid-column-start: 2;
