@@ -170,6 +170,7 @@ footer{
   background-size: cover;
   position: relative;
   z-index: -1;
+  color: var(--light-contrast);
 }
 
 #home-main .overlay{
@@ -188,6 +189,13 @@ footer{
   transform: translateY(-50%);
   position: relative;
   z-index: 1;
+}
+
+#home-main .clear{
+  border: 1px solid var(--light-contrast);
+  border-radius: 5px;
+  color: var(--light-contrast);
+  background: none;
 }
 
 
