@@ -7,9 +7,54 @@
   --secondary-dark: #0B2EAD;
 }
 
+/* Fonts */
+body{
+  font-size: 16px;
+}
+h1{
+  font-size: 4.909em;
+}
+h2{
+  font-size: 3.034em;
+}
+h3{
+  font-size: 1.875em;
+}
+h4{
+  font-size: 1.159em;
+} 
 a{
+  font-size: 1.159;
   text-decoration: none;
   color: inherit;
+}
+@media only screen and (min-width: 768px){
+  h1{
+    font-size: 7.942em;
+  }
+  h2{
+    font-size: 4.909em;
+  }
+  h3{
+    font-size: 3.034em;
+  }
+  h4{
+    font-size: 1.875em;
+  }
+  a{
+    font-size: 1.875em;
+  }
+}
+
+/* Button Styles */
+button{
+  cursor: pointer;
+}
+.clear{
+  border: 1px solid var(--light-contrast);
+  border-radius: 5px;
+  color: var(--light-contrast);
+  background: none;
 }
 
 /* Navigation ******************************************************************/
@@ -27,6 +72,7 @@ a{
   margin: 0 auto;
 }
 #navbar-logo{
+  font-size: 1.875em;
   color: var(--light-contrast);
   cursor: pointer;
   grid-column-start: 2;
@@ -91,9 +137,6 @@ a{
   transform: translateY(-8px) rotate(-45deg);
 }
 
-@media only screen and (min-width: 768px){
-
-}
 @media only screen and (min-width: 1200px){
   .navbar{
     grid-template-columns: 0.5fr auto 0.3fr;
@@ -144,7 +187,7 @@ footer{
 }
 .icons ul{
   display: grid;
-  height: 7vh;
+  height: 6vh;
   grid-template-columns: repeat(3, auto);
   align-items: center;
 }
@@ -161,10 +204,18 @@ footer{
   color: var(--secondary-light);
   transition: all 0.4s ease-out;
 }
+@media only screen and (min-width: 1200px){
+  .icons{
+    width: 20%;
+  }
+  .icons i{
+    font-size: 30px;
+  }
+}
 
-/* Home */
+/* Home **************************************************************************/
 #home-main{
-  height: 86vh;
+  height: 87vh;
   text-align: center;
   background: url('../img/bg_home.jpg') center center no-repeat;
   background-size: cover;
@@ -172,7 +223,6 @@ footer{
   z-index: -1;
   color: var(--light-contrast);
 }
-
 #home-main .overlay{
   position: absolute;
   width: 100%;
@@ -181,8 +231,9 @@ footer{
   opacity: 0.4;
   z-index: 0;
 } 
-
 #home-main .content{
+  width: 90%;
+  margin: 0 auto;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -190,16 +241,47 @@ footer{
   position: relative;
   z-index: 1;
 }
+#home-main h1{
+  margin-bottom: 8%;
+}
+#home-main h3{
+  margin-bottom: 8%;
+}
+#home-main h4{
+  margin-bottom: 8%;
+}
+#home-main button{
+  margin-top: 1em;
+  padding: 0.5em;
+}
 
-#home-main .clear{
-  border: 1px solid var(--light-contrast);
-  border-radius: 5px;
-  color: var(--light-contrast);
-  background: none;
+@media only screen and (min-width: 768px){
+  #home-main h3{
+    font-weight: 500;
+  }
+  #home-main h4{
+    font-weight: 100;
+  }
+  #home-main button{
+    margin-top: 1em;
+    font-size: 1.875em;
+  }
+}
+@media only screen and (min-width: 1200px){
+  #home-main h1{
+    margin-bottom: 2%;
+  }
+  #home-main h3{
+    margin-bottom: 2%;
+  }
+  #home-main h4{
+    margin-bottom: 2%;
+  }
 }
 
 
-/* About */
+/* About **************************************************************************/
 
-/* Contact */
+
+/* Contact **************************************************************************/
 #con { 	background-color:#03AC13; } 
