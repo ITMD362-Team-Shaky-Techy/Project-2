@@ -38,7 +38,6 @@ a{
   h3{
     font-size: 3.034em;
   }
-  
   h4{
     font-size: 1.875em;
   }
@@ -188,7 +187,7 @@ footer{
 }
 .icons ul{
   display: grid;
-  height: 7vh;
+  height: 6vh;
   grid-template-columns: repeat(3, auto);
   align-items: center;
 }
@@ -214,9 +213,9 @@ footer{
   }
 }
 
-/* Home */
+/* Home **************************************************************************/
 #home-main{
-  height: 86vh;
+  height: 87vh;
   text-align: center;
   background: url('../img/bg_home.jpg') center center no-repeat;
   background-size: cover;
@@ -243,33 +242,44 @@ footer{
   z-index: 1;
 }
 #home-main h1{
-  margin-bottom: 1rem;
+  margin-bottom: 8%;
 }
 #home-main h3{
-  margin-bottom: 1rem;
+  margin-bottom: 8%;
 }
 #home-main h4{
-  margin-bottom: 1rem;
+  margin-bottom: 8%;
+}
+#home-main button{
+  margin-top: 1em;
+  padding: 0.5em;
 }
 
 @media only screen and (min-width: 768px){
-  #home-main h1{
-    margin-bottom: 2rem;
-  }
   #home-main h3{
     font-weight: 500;
-    margin-bottom: 2rem;
   }
   #home-main h4{
     font-weight: 100;
-    margin-bottom: 2rem;
+  }
+  #home-main button{
+    margin-top: 1em;
+    font-size: 1.875em;
   }
 }
 @media only screen and (min-width: 1200px){
-
+  #home-main h1{
+    margin-bottom: 2%;
+  }
+  #home-main h3{
+    margin-bottom: 2%;
+  }
+  #home-main h4{
+    margin-bottom: 2%;
+  }
 }
 
 
-/* About */
+/* About **************************************************************************/
 
-/* Contact */
+/* Contact **************************************************************************/
