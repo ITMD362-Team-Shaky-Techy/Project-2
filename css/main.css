@@ -172,7 +172,7 @@ footer{
   z-index: -1;
 }
 
-.overlay{
+#home-main .overlay{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -182,6 +182,10 @@ footer{
 } 
 
 #home-main .content{
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   position: relative;
   z-index: 1;
 }
