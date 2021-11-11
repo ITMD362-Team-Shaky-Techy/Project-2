@@ -7,9 +7,37 @@
   --secondary-dark: #0B2EAD;
 }
 
+/* Fonts */
+body{
+  font-size: 16px;
+}
+h1{
+  font-size: 6.37em;
+}
+h2{
+  font-size: 3.821em;
+}
+h3{
+  font-size: 2.292em;
+}
+h4{
+  font-size: 1.375em;
+}
+
 a{
   text-decoration: none;
   color: inherit;
+}
+
+/* Button Styles */
+button{
+  cursor: pointer;
+}
+.clear{
+  border: 1px solid var(--light-contrast);
+  border-radius: 5px;
+  color: var(--light-contrast);
+  background: none;
 }
 
 /* Navigation ******************************************************************/
@@ -183,6 +211,8 @@ footer{
 } 
 
 #home-main .content{
+  width: 90%;
+  margin: 0 auto;
   position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
@@ -190,13 +220,16 @@ footer{
   position: relative;
   z-index: 1;
 }
-
-#home-main .clear{
-  border: 1px solid var(--light-contrast);
-  border-radius: 5px;
-  color: var(--light-contrast);
-  background: none;
+#home-main h1{
+  margin-bottom: 1rem;
 }
+#home-main h3{
+  margin-bottom: 1rem;
+}
+#home-main h4{
+  margin-bottom: 1rem;
+}
+
 
 
 /* About */
