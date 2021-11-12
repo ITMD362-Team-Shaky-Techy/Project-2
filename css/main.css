@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 /* General */
 :root{
   --primary: #3758CF;
@@ -10,6 +12,7 @@
 /* Fonts */
 body{
   font-size: 16px;
+  font-family: 'Merriweather', 'Georgia', serif;
 }
 h1{
   font-size: 4.909em;
