@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
 /* General */
 :root{
   --primary: #3758CF;
@@ -10,6 +12,7 @@
 /* Fonts */
 body{
   font-size: 16px;
+  font-family: 'Merriweather', 'Georgia', serif;
 }
 h1{
   font-size: 4.909em;
@@ -220,7 +223,6 @@ footer{
   background: url('../img/bg_home.jpg') center center no-repeat;
   background-size: cover;
   position: relative;
-  z-index: -1;
   color: var(--light-contrast);
 }
 #home-main .overlay{
@@ -229,7 +231,6 @@ footer{
   height: 100%;
   background-color: black;
   opacity: 0.4;
-  z-index: 0;
 } 
 #home-main .content{
   width: 90%;
@@ -239,7 +240,6 @@ footer{
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   position: relative;
-  z-index: 1;
 }
 #home-main h1{
   margin-bottom: 8%;
