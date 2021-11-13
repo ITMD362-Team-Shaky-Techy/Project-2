@@ -227,7 +227,7 @@ footer{
   color: var(--secondary-light);
   transition: all 0.4s ease-out;
 }
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 768px){
   .icons{
     width: 20%;
   }
@@ -235,6 +235,7 @@ footer{
     font-size: 30px;
   }
 }
+
 
 /* Home **************************************************************************/
 #home-main{
