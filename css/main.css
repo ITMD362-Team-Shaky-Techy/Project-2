@@ -52,6 +52,7 @@ a{
 /* Button Styles */
 button{
   cursor: pointer;
+  font-family: inherit;
 }
 .clear{
   border: 1px solid var(--light-contrast);
@@ -83,7 +84,8 @@ button{
   align-self: center;
 }
 .menu-toggle{
-  justify-self: end;
+  grid-column-start: 1;
+  align-self: center;
 }
 .nav-menu{
   width: 100%;
@@ -98,6 +100,7 @@ button{
   transition: all 0.5s ease;
   list-style: none;
   text-align: center;
+  z-index: 1;
 }
 .nav-menu.active{
   left: 0;
@@ -126,9 +129,7 @@ button{
 }
 #mobile-menu{
   position: absolute;
-  top: 20%;
-  right: 5%;
-  transform: translate(6%, 20%);
+  left: 10px;
 }
 #mobile-menu.is-active .bar:nth-child(2){
   opacity: 0;
@@ -138,6 +139,25 @@ button{
 }
 #mobile-menu.is-active .bar:nth-child(3){
   transform: translateY(-8px) rotate(-45deg);
+}
+
+@media only screen and (min-width: 768px){
+  .menu-toggle .bar{
+    width: 40px;
+    height: 4px;
+    margin: 7px auto;
+    background: var(--light-contrast);
+  }
+  #mobile-menu{
+    position: absolute;
+    left: 10px;
+  }
+  #mobile-menu.is-active .bar:nth-child(1){
+    transform: translateY(11px) rotate(45deg);
+  }
+  #mobile-menu.is-active .bar:nth-child(3){
+    transform: translateY(-11px) rotate(-45deg);
+  }
 }
 
 @media only screen and (min-width: 1200px){
@@ -207,7 +227,7 @@ footer{
   color: var(--secondary-light);
   transition: all 0.4s ease-out;
 }
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 768px){
   .icons{
     width: 20%;
   }
@@ -215,6 +235,7 @@ footer{
     font-size: 30px;
   }
 }
+
 
 /* Home **************************************************************************/
 #home-main{
