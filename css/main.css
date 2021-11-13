@@ -168,20 +168,24 @@ button{
   .nav-container{
     position: static;
   }
-  .nav-menu{
-    grid-template-columns: repeat(3, auto);
-    grid-column-start: 3;
-    width: 70%;
-    background: none;
-    position: static;
-    justify-self: end;
-    left: 100%;
-    opacity: 1;
-  }
   #navbar-logo{
     grid-column-start: 1;
     justify-self: start;
     margin-left: 20px;
+  }
+  .nav-menu{
+    grid-template-columns: repeat(3, auto);
+    grid-column-start: 3;
+    width: 100%;
+    background: none;
+    position: static;
+    justify-self: end;
+    align-self: center;
+    left: 100%;
+    opacity: 1;
+  }
+  .nav-link{
+    padding-left: 5%;
   }
   .nav-link.active{
     background: none;
