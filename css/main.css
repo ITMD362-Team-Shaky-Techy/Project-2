@@ -52,6 +52,7 @@ a{
 /* Button Styles */
 button{
   cursor: pointer;
+  font-family: inherit;
 }
 .clear{
   border: 1px solid var(--light-contrast);
