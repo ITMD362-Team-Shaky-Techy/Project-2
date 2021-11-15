@@ -309,6 +309,8 @@ footer{
 
 
 /* Contact **************************************************************************/
+#con{	background-color:#03AC13;	} 
+
 #sign{	
 		text-align: center;
 		padding: 3%;
@@ -341,11 +343,28 @@ footer{
 		width:70%;
 	}
 
-#con{	background-color:#03AC13;	} 
+#sub{	font-size:17px;	}
+
+#can{	font-size:17px;	}
 
 #brand{		
 		padding:2.5%;	
 		line-height:2.0em;
 	}
 
-
+@media only screen and (min-width: 768px) {
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
