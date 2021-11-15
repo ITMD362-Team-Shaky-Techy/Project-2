@@ -309,4 +309,16 @@ footer{
 
 
 /* Contact **************************************************************************/
-#con { 	background-color:#03AC13; } 
+section{	
+		text-align: center;
+		padding: 3%;
+		background-color: #F8F6F0;
+		line-height:2.5em;
+		margin: 12%;
+	}
+
+#question{	font-size:1.2em;	}
+
+#con{	background-color:#03AC13;	} 
+
+footer{		padding:2.5%;	}
