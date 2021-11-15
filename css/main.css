@@ -331,6 +331,16 @@ footer{
 		line-height:0.5em;
 	}
 	
+#mail{	margin-right:3.1%;
+		height:22px;
+		width:70%;
+	}
+	
+#tel{	margin-right:0.56%;
+		height:22px;
+		width:70%;
+	}
+
 #con{	background-color:#03AC13;	} 
 
 #brand{		
