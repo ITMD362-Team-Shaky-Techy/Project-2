@@ -343,9 +343,14 @@ footer{
 		width:70%;
 	}
 
-#sub{	font-size:17px;	}
+#sub{	font-size:17px;
+		height:32px;
+		margin-right: 1.8%;
+	}
 
-#can{	font-size:17px;	}
+#can{	font-size:17px;	
+		height:32px;
+	}
 
 #brand{		
 		padding:2.5%;	
@@ -354,11 +359,33 @@ footer{
 
 @media only screen and (min-width: 768px) {
 	
+	#sign{	
+			padding: 3.2%;
+			line-height:2.5em;
+			margin: 10%;
+		}
 	
+	#head{		font-size:2.4em;
+				line-height:1.4em;
+				margin-bottom:0.5%;
+		}
 	
+	#ff{	font-size:1.2em;	}
 	
+	#fn{	
+			height:22px;
+			line-height:0.5em;
+			width:50%;
+			margin-bottom:2.5%;
+		}
 	
+	#ll{	font-size:1.2em;	}
 	
+	#ln{	
+			height:22px;
+			line-height:0.5em;
+			width:50%;
+		}
 	
 	
 	
@@ -368,3 +395,5 @@ footer{
 	
 	
 }
+
+@media only screen and (min-width: 1200px) {
