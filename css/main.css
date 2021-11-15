@@ -319,8 +319,23 @@ footer{
 
 #question{	font-size:1.2em;	}
 
+#fn{	
+		width:90%;
+		height:22px;
+		line-height:0.5em;
+	}
+	
+#ln{	
+		width:90%;
+		height:22px;
+		line-height:0.5em;
+	}
+	
 #con{	background-color:#03AC13;	} 
 
-#brand{		padding:2.5%;	}
+#brand{		
+		padding:2.5%;	
+		line-height:2.0em;
+	}
 
 
