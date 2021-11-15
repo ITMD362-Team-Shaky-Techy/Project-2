@@ -309,7 +309,7 @@ footer{
 
 
 /* Contact **************************************************************************/
-section{	
+#sign{	
 		text-align: center;
 		padding: 3%;
 		background-color: #F8F6F0;
@@ -321,4 +321,6 @@ section{
 
 #con{	background-color:#03AC13;	} 
 
-footer{		padding:2.5%;	}
+#brand{		padding:2.5%;	}
+
+
