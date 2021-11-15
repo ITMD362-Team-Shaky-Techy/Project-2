@@ -361,13 +361,13 @@ footer{
 	
 	#sign{	
 			padding: 3.2%;
-			line-height:2.5em;
 			margin: 10%;
 		}
 	
-	#head{		font-size:2.4em;
-				line-height:1.4em;
-				margin-bottom:0.5%;
+	#head{	
+			font-size:2.4em;
+			line-height:1.4em;
+			margin-bottom:0.5%;
 		}
 	
 	#ff{	font-size:1.2em;	}
@@ -376,6 +376,7 @@ footer{
 			height:22px;
 			line-height:0.5em;
 			width:50%;
+			margin-right:6.5%;
 			margin-bottom:2.5%;
 		}
 	
@@ -385,6 +386,34 @@ footer{
 			height:22px;
 			line-height:0.5em;
 			width:50%;
+			margin-right:6.5%;
+		}
+	
+	#ma{	font-size:1.2em;	}
+	
+	#mail{	
+			margin-right:2.6%;
+			height:22px;
+			width:50%;
+		}
+	
+	#te{	font-size:1.2em;	}
+	
+	#tel{	
+			margin-left:1.16%;
+			height:22px;
+			width:50%;
+		}
+		
+}
+
+@media only screen and (min-width: 1200px) {
+	
+	#sign{	
+			
+			width:40%;
+			padding: 3.0%;
+			margin: 8%;
 		}
 	
 	
@@ -394,6 +423,11 @@ footer{
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
 }
-
-@media only screen and (min-width: 1200px) {
