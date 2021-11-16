@@ -415,19 +415,14 @@ footer{
 			padding: 3.0%;
 			margin: 8%;
 		}
+	#con{	background-image: url("../img/world.jpg");	
+			background-size: cover;
+			background-repeat:no-repeat;
+			background-position:right;		
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	#brand{		
+			padding:2.7%;	
+			line-height:1.0em;
+	}
 }
