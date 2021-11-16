@@ -311,7 +311,90 @@ footer{
 
 
 /* About **************************************************************************/
+video {
+  float: right;
+  width: 50%;
+}
+#about {
+  margin: 35px 50px 35px 90px;
+}
+#intro {
+  margin: 20px 100px 30px 90px;
+}
+.para {
+  margin: 20px 100px 30px 90px;
+}
+#mission {
+  margin: 10px 0 35px 90px;
+}
+.facts {
+  background-color: rgb(220, 214, 238);
+  width: 1100px;
+  padding: 30px;
+  margin: 30px 100px 0 90px;
+}
+#ul {
+  margin: 20px 0 30px 50px;
+  line-height: 40px;
+  list-style: disc;
+}
+@media only screen and (min-width: 768px){
+  video {
+    float: right;
+    width: 60%;
+  }
+  #about {
+    margin: 35px 35px 35px 40px;
+  }
+  #intro {
+    margin: 20px 35px 30px 60px;
+  }
+  .para {
+    margin: 20px 35px 30px 60px;
+  }
+  #mission {
+    margin: 10px 0 35px 60px;
+  }
+  .facts {
+    background-color: rgb(220, 214, 238);
+    width: 700px;
+    padding: 30px;
+    margin: 30px 50px 0 90px;
+  }
+  #ul {
+    margin: 20px 50px 30px 30px;
+    line-height: 30px;
+    list-style: disc;
+  }
 
+  @media only screen and (min-width: 1200px){
+    video {
+      float: right;
+      width: 60%;
+    }
+    #about {
+      margin: 35px 35px 35px 40px;
+    }
+    #intro {
+      margin: 20px 45px 30px 60px;
+    }
+    .para {
+      margin: 20px 45px 30px 60px;
+    }
+    #mission {
+      margin: 10px 0 45px 60px;
+    }
+    .facts {
+      background-color: rgb(220, 214, 238);
+      width: 900px;
+      padding: 30px;
+      margin: 30px 50px 0 70px;
+    }
+    #ul {
+      margin: 20px 50px 30px 30px;
+      line-height: 30px;
+      list-style: disc;
+    }
 
 /* Contact **************************************************************************/
 #con{	background-color:var(--accent);	} 
