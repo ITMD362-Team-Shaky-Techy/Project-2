@@ -333,6 +333,11 @@ video {
   padding: 30px;
   margin: 30px 100px 0 100px;
 }
+#ul {
+  margin: 20px 0 30px 50px;
+  line-height: 40px;
+}
+
 /* Contact **************************************************************************/
 #con{	background-color:var(--accent);	} 
 
