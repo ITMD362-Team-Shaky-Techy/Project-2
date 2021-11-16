@@ -309,7 +309,6 @@ footer{
   }
 }
 
-
 /* About **************************************************************************/
 video {
   float: right;
@@ -344,7 +343,7 @@ video {
     width: 60%;
   }
   #about {
-    margin: 35px 35px 35px 40px;
+    margin: 35px 35px 35px 60px;
   }
   #intro {
     margin: 20px 35px 30px 60px;
