@@ -28,7 +28,7 @@ h4{
   font-size: 1.159em;
 } 
 a{
-  font-size: 1.159;
+  font-size: 1.159em;
   text-decoration: none;
   color: inherit;
 }
@@ -366,150 +366,149 @@ video {
     list-style: disc;
   }
 
-  @media only screen and (min-width: 1200px){
-    video {
-      float: right;
-      width: 60%;
-    }
-    #about {
-      margin: 35px 35px 35px 60px;
-    }
-    #intro {
-      margin: 20px 45px 30px 60px;
-    }
-    .para {
-      margin: 20px 45px 30px 60px;
-    }
-    #mission {
-      margin: 10px 0 45px 60px;
-    }
-    .facts {
-      background-color: rgb(220, 214, 238);
-      width: 900px;
-      padding: 30px;
-      margin: 30px 50px 0 70px;
-    }
-    #ul {
-      margin: 20px 50px 30px 30px;
-      line-height: 30px;
-      list-style: disc;
-    }
+@media only screen and (min-width: 1200px){
+  video {
+    float: right;
+    width: 60%;
+  }
+  #about {
+    margin: 35px 35px 35px 60px;
+  }
+  #intro {
+    margin: 20px 45px 30px 60px;
+  }
+  .para {
+    margin: 20px 45px 30px 60px;
+  }
+  #mission {
+    margin: 10px 0 45px 60px;
+  }
+  .facts {
+    background-color: rgb(220, 214, 238);
+    width: 900px;
+    padding: 30px;
+    margin: 30px 50px 0 70px;
+  }
+  #ul {
+    margin: 20px 50px 30px 30px;
+    line-height: 30px;
+    list-style: disc;
+  }
 
 /* Contact **************************************************************************/
 #con{	background-color:var(--accent);	} 
 
 #sign{	
-		text-align: center;
-		padding: 3%;
-		background-color: #F8F6F0;
-		line-height:2.5em;
-		margin: 12%;
-	}
+	text-align: center;
+	padding: 3%;
+	background-color: #F8F6F0;
+	line-height:2.5em;
+	margin: 12%;
+}
 
-#question{	font-size:1.2em;	}
+#question{
+  font-size:1.2em;}
 
 #fn{	
-		width:90%;
-		height:22px;
-		line-height:0.5em;
-	}
-	
+	width:90%;
+	height:22px;
+	line-height:0.5em;
+}
 #ln{	
-		width:90%;
-		height:22px;
-		line-height:0.5em;
-	}
-	
-#mail{	margin-right:3.1%;
-		height:22px;
-		width:70%;
-	}
+	width:90%;
+	height:22px;
+	line-height:0.5em;
+}
+#mail {
+  margin-right:3.1%;
+	height:22px;
+	width:70%;
+}
 	
 #tel{	margin-right:0.56%;
-		height:22px;
-		width:70%;
-	}
+	height:22px;
+	width:70%;
+}
 
 #sub{	font-size:17px;
-		height:32px;
-		margin-right: 1.8%;
-	}
+	height:32px;
+	margin-right: 1.8%;
+}
 
 #can{	font-size:17px;	
-		height:32px;
-	}
+	height:32px;
+}
 
 #brand{		
-		padding:2.5%;	
-		line-height:2.0em;
-	}
+	padding:2.5%;	
+	line-height:2.0em;
+}
 
 @media only screen and (min-width: 768px) {
 	
 	#sign{	
-			padding: 3.2%;
-			margin: 10%;
-		}
+		padding: 3.2%;
+		margin: 10%;
+	}
 	
 	#head{	
-			font-size:2.4em;
-			line-height:1.4em;
-			margin-bottom:0.5%;
-		}
+		font-size:2.4em;
+		line-height:1.4em;
+		margin-bottom:0.5%;
+	}
 	
-	#ff{	font-size:1.2em;	}
+	#ff{  font-size:1.2em;}
 	
 	#fn{	
-			height:22px;
-			line-height:0.5em;
-			width:50%;
-			margin-right:6.5%;
-			margin-bottom:2.5%;
-		}
+		height:22px;
+		line-height:0.5em;
+		width:50%;
+		margin-right:6.5%;
+		margin-bottom:2.5%;
+	}
 	
 	#ll{	font-size:1.2em;	}
 	
 	#ln{	
-			height:22px;
-			line-height:0.5em;
-			width:50%;
-			margin-right:6.5%;
-		}
+		height:22px;
+		line-height:0.5em;
+		width:50%;
+		margin-right:6.5%;
+	}
 	
 	#ma{	font-size:1.2em;	}
 	
 	#mail{	
-			margin-right:2.6%;
-			height:22px;
-			width:50%;
-		}
+	  margin-right:2.6%;
+		height:22px;
+		width:50%;
+	}
 	
 	#te{	font-size:1.2em;	}
 	
 	#tel{	
-			margin-left:1.16%;
-			height:22px;
-			width:50%;
-		}
+		margin-left:1.16%;
+		height:22px;
+		width:50%;
+	}
 		
 }
 
 @media only screen and (min-width: 1200px) {
 	
 	#sign{	
-			
-			width:40%;
-			padding: 3.0%;
-			margin: 8%;
-		}
-	#con{	background-image: url("../img/world.jpg");	
-			background-size: cover;
-			background-repeat:no-repeat;
-			background-position:right;		
+		width:40%;
+		padding: 3.0%;
+		margin: 8%;
+  }
+	#con{
+    background-image: url("../img/world.jpg");	
+		background-size: cover;
+		background-repeat:no-repeat;
+		background-position:right;		
 	}
-	
 	#brand{		
-			padding:2.7%;	
-			line-height:1.0em;
+		padding:2.7%;	
+		line-height:1.0em;
 	}
 }
