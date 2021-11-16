@@ -315,6 +315,10 @@ video {
   float: right;
   width: 50%;
 }
+#about {
+  margin: 25px 50px 75px 100px;
+}
+
 
 /* Contact **************************************************************************/
 #con{	background-color:var(--accent);	} 
