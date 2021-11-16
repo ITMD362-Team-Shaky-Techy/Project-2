@@ -7,6 +7,7 @@
   --dark-contrast: #020C2E;
   --secondary-light: #788DDB;
   --secondary-dark: #0B2EAD;
+  --accent:#03AC13;
 }
 
 /* Fonts */
@@ -129,7 +130,7 @@ button{
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  background: var(--light-contrast);
+  background: var(--accent);
 }
 #mobile-menu{
   position: absolute;
@@ -196,7 +197,7 @@ button{
     color: var(--dark-contrast);
   }
   .nav-link:hover{
-    color: var(--secondary-light);
+    color: var(--accent);
     transition: all 0.4s ease-out;
   }
   .menu-toggle .bar{
@@ -313,7 +314,7 @@ footer{
 
 
 /* Contact **************************************************************************/
-#con{	background-color:#03AC13;	} 
+#con{	background-color:var(--accent);	} 
 
 #sign{	
 		text-align: center;
