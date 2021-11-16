@@ -328,7 +328,7 @@ video {
   margin: 10px 0 35px 100px;
 }
 .facts {
-  background-color: rgb(199, 195, 195);
+  background-color: rgb(220, 214, 238);
   width: 1100px;
   padding: 30px;
   margin: 30px 100px 0 100px;
@@ -336,7 +336,9 @@ video {
 #ul {
   margin: 20px 0 30px 50px;
   line-height: 40px;
+  list-style: disc;
 }
+
 /* Contact **************************************************************************/
 #con{	background-color:var(--accent);	} 
 
