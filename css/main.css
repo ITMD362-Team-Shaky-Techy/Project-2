@@ -324,7 +324,9 @@ video {
 .para {
   margin: 20px 100px 30px 100px;
 }
-
+#mission {
+  margin: 10px 0 0 30px;
+}
 
 /* Contact **************************************************************************/
 #con{	background-color:var(--accent);	} 
