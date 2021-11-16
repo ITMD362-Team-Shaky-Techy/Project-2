@@ -327,7 +327,12 @@ video {
 #mission {
   margin: 10px 0 0 30px;
 }
-
+.facts {
+  background-color: rgb(199, 195, 195);
+  width: 1250px;
+  padding: 30px;
+  margin: 30px 100px 0 100px;
+}
 /* Contact **************************************************************************/
 #con{	background-color:var(--accent);	} 
 
