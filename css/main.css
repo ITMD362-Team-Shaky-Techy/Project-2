@@ -362,6 +362,7 @@ video {
     line-height: 30px;
     list-style: disc;
   }
+}
 
 @media only screen and (min-width: 1200px){
   video {
@@ -391,6 +392,7 @@ video {
     line-height: 30px;
     list-style: disc;
   }
+}
 
 /* Contact **************************************************************************/
 #con{	background-color:var(--accent);	} 
