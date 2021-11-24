@@ -227,7 +227,7 @@ footer{
 .icons i{
   cursor: pointer;
   justify-self: center;
-  color: white;
+  color: var(--light-contrast);
   font-size: 20px;
 }
 .icons i:hover{
@@ -236,11 +236,18 @@ footer{
 }
 @media only screen and (min-width: 768px){
   .icons{
-    width: 20%;
+    width: 40%;
   }
   .icons i{
-    size: 30em;
+    font-size: 25px;
   }
+  @media only screen and (min-width: 1200px){
+    .icons{
+      width: 25%;
+    }
+    .icons i{
+      font-size: 30px;
+    }
 }
 
 
@@ -311,6 +318,9 @@ video {
   float: right;
   width: 50%;
 }
+#aboutus{
+  height: 87vh;
+}
 #about {
   margin: 35px 50px 35px 90px;
 }
@@ -329,7 +339,7 @@ video {
   padding: 30px;
   margin: 30px 100px 0 90px;
 }
-#ul {
+#aboutus ul {
   margin: 20px 0 30px 50px;
   line-height: 40px;
   list-style: disc;
