@@ -63,6 +63,17 @@ button{
   background: var(--primary);
   transition: all 0.4s ease-in-out;
 }
+.clear-dark{
+  border: 1px solid var(--dark-contrast);
+  border-radius: 5px;
+  color: var(--dark-contrast);
+  background: none;
+}
+.clear-dark:hover{
+  background: var(--dark-contrast);
+  color: var(--light-contrast);
+  transition: all 0.4s ease-in-out;
+}
 
 /* Navigation ******************************************************************/
 .nav-container{
@@ -231,7 +242,7 @@ footer{
   font-size: 20px;
 }
 .icons i:hover{
-  color: var(--secondary-light);
+  color: var(--dark-contrast);
   transition: all 0.4s ease-out;
 }
 @media only screen and (min-width: 768px){
@@ -395,119 +406,81 @@ video {
 }
 
 /* Contact **************************************************************************/
-#con{	background-color:var(--accent);	} 
 
 #sign{	
 	text-align: center;
-	padding: 3%;
-	background-color: #F8F6F0;
-	line-height:2.5em;
-	margin: 12%;
+	height: 87vh;
+  background: url('../img/world.jpg') center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#form-container{
+  background-color: #F8F6F0;
+  width: 95%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  position: relative;
+}
+#sign form{
+  padding: 5%;
 }
 
 #question{
-  font-size:1.2em;}
-
-#fn{	
-	width:90%;
-	height:22px;
-	line-height:0.5em;
-}
-#ln{	
-	width:90%;
-	height:22px;
-	line-height:0.5em;
-}
-#mail {
-  margin-right:3.1%;
-	height:22px;
-	width:70%;
-}
-	
-#tel{	margin-right:0.56%;
-	height:22px;
-	width:70%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-#sub{	font-size:17px;
-	height:32px;
-	margin-right: 1.8%;
+#sign .label-input input{
+  display: block;
+  width: 100%;
+  margin: 8% auto;
+  height: 2rem;
+}
+#sign .label-input label{
+  display: block;
+  float: left;
+  font-size: 1.1rem;
+  color: var(--dark-contrast);
+  font-weight: 500;
+}
+#sign button{
+  margin-top: 5%;
+  padding: 2%;
 }
 
-#can{	font-size:17px;	
-	height:32px;
-}
-
-#brand{		
-	padding:2.5%;	
-	line-height:2.0em;
-}
-
-@media only screen and (min-width: 768px) {
-	
-	#sign{	
-		padding: 3.2%;
-		margin: 10%;
-	}
-	
-	#head{	
-		font-size:2.4em;
-		line-height:1.4em;
-		margin-bottom:0.5%;
-	}
-	
-	#ff{  font-size:1.2em;}
-	
-	#fn{	
-		height:22px;
-		line-height:0.5em;
-		width:50%;
-		margin-right:6.5%;
-		margin-bottom:2.5%;
-	}
-	
-	#ll{	font-size:1.2em;	}
-	
-	#ln{	
-		height:22px;
-		line-height:0.5em;
-		width:50%;
-		margin-right:6.5%;
-	}
-	
-	#ma{	font-size:1.2em;	}
-	
-	#mail{	
-	  margin-right:2.6%;
-		height:22px;
-		width:50%;
-	}
-	
-	#te{	font-size:1.2em;	}
-	
-	#tel{	
-		margin-left:1.16%;
-		height:22px;
-		width:50%;
-	}
-		
-}
-
-@media only screen and (min-width: 1200px) {
-	
-	#sign{	
-		width:40%;
-		padding: 3.0%;
-		margin: 8%;
+@media only screen and (min-width:768px){
+  .label-input input{
+    height: 1.667em;
   }
-	#con{
-    background-image: url("../img/world.jpg");	
-		background-size: cover;
-		background-repeat:no-repeat;
-		background-position:right;		
-	}
-	#brand{		
-		padding:2.7%;	
-		line-height:1.0em;
-	}
 }
+
+@media only screen and (min-width:1200px){
+  #form-container{
+    width: 60%;
+  }
+  #sign .label-input input{
+    display: inline;
+    min-width: none;
+    width: 40%;
+    margin: 0;
+    height: 1.6rem;
+  }
+  #sign .label-input label{
+    font-size: 1.667em;
+    display: inline;
+    width: 15%;
+    margin-left: 15%;
+    
+  }
+  .label-input {
+    align-content: center;
+    margin-bottom: 1%;
+  }
+}
+
+
+
+
