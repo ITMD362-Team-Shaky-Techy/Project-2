@@ -128,7 +128,7 @@ button{
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  background: var(--accent);
+  background: var(--light-contrast);
 }
 #mobile-menu{
   position: absolute;
@@ -236,18 +236,11 @@ footer{
 }
 @media only screen and (min-width: 768px){
   .icons{
-    width: 40%;
+    width: 20%;
   }
   .icons i{
-    font-size: 25px;
+    font-size: 30px;
   }
-  @media only screen and (min-width: 1200px){
-    .icons{
-      width: 25%;
-    }
-    .icons i{
-      font-size: 30px;
-    }
 }
 
 
@@ -318,9 +311,6 @@ video {
   float: right;
   width: 50%;
 }
-#aboutus{
-  height: 87vh;
-}
 #about {
   margin: 35px 50px 35px 90px;
 }
@@ -339,7 +329,7 @@ video {
   padding: 30px;
   margin: 30px 100px 0 90px;
 }
-#aboutus ul {
+#ul {
   margin: 20px 0 30px 50px;
   line-height: 40px;
   list-style: disc;
@@ -405,9 +395,7 @@ video {
 }
 
 /* Contact **************************************************************************/
-#con{	
-  background-color:var(--accent);	
-} 
+#con{	background-color:var(--accent);	} 
 
 #sign{	
 	text-align: center;
@@ -418,8 +406,8 @@ video {
 }
 
 #question{
-  font-size:1.2em;
-}
+  font-size:1.2em;}
+
 #fn{	
 	width:90%;
 	height:22px;
@@ -436,20 +424,17 @@ video {
 	width:70%;
 }
 	
-#tel{	
-  margin-right:0.56%;
+#tel{	margin-right:0.56%;
 	height:22px;
 	width:70%;
 }
 
-#sub{	
-  font-size:17px;
+#sub{	font-size:17px;
 	height:32px;
 	margin-right: 1.8%;
 }
 
-#can{	
-  font-size:17px;	
+#can{	font-size:17px;	
 	height:32px;
 }
 
@@ -471,9 +456,7 @@ video {
 		margin-bottom:0.5%;
 	}
 	
-	#ff{  
-    font-size:1.2em;
-  }
+	#ff{  font-size:1.2em;}
 	
 	#fn{	
 		height:22px;
@@ -483,9 +466,7 @@ video {
 		margin-bottom:2.5%;
 	}
 	
-	#ll{	
-    font-size:1.2em;	
-  }
+	#ll{	font-size:1.2em;	}
 	
 	#ln{	
 		height:22px;
@@ -494,9 +475,7 @@ video {
 		margin-right:6.5%;
 	}
 	
-	#ma{	
-    font-size:1.2em;	
-  }
+	#ma{	font-size:1.2em;	}
 	
 	#mail{	
 	  margin-right:2.6%;
@@ -504,18 +483,18 @@ video {
 		width:50%;
 	}
 	
-	#te{	
-    font-size:1.2em;	
-  }
+	#te{	font-size:1.2em;	}
 	
 	#tel{	
 		margin-left:1.16%;
 		height:22px;
 		width:50%;
-	}	
+	}
+		
 }
 
 @media only screen and (min-width: 1200px) {
+	
 	#sign{	
 		width:40%;
 		padding: 3.0%;
@@ -532,4 +511,3 @@ video {
 		line-height:1.0em;
 	}
 }
-
