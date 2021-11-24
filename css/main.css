@@ -426,6 +426,7 @@ video {
 }
 #sign form{
   padding: 5%;
+  margin:auto;
 }
 
 #question{
@@ -438,10 +439,11 @@ video {
   width: 100%;
   margin: 8% auto;
   height: 2rem;
+
 }
 #sign .label-input label{
   display: block;
-  float: left;
+  float:left;
   font-size: 1.1rem;
   color: var(--dark-contrast);
   font-weight: 500;
@@ -452,16 +454,31 @@ video {
 }
 
 @media only screen and (min-width:768px){
-  .label-input input{
-    height: 1.667em;
+  #sign .label-input label{
+    padding-bottom: 1%;
   }
 }
 
 @media only screen and (min-width:1200px){
   #form-container{
-    width: 60%;
+    width: 70%;
+  }
+  #question{
+    padding-bottom: 2%;
+  }
+  #head{
+    padding-bottom: 2%;
+  }
+  #sign form{
+    width: 100%;
+    padding:0;
+  }
+  .label-input {
+    width: 90%;
+    margin-bottom: 1%;
   }
   #sign .label-input input{
+    padding-bottom: none;
     display: inline;
     min-width: none;
     width: 40%;
@@ -473,12 +490,11 @@ video {
     display: inline;
     width: 15%;
     margin-left: 15%;
-    
   }
-  .label-input {
-    align-content: center;
-    margin-bottom: 1%;
+  #sign button{
+    margin-bottom: 3%;
   }
+  
 }
 
 
