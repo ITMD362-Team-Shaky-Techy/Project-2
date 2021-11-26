@@ -14,7 +14,7 @@
   <script src="js/main.js" async></script>
   <title>Contact</title>
 </head>
-<body id = "con">
+<body>
   <!-- Navigation Bar -->
   <div class="nav-container">
     <nav class="navbar">
@@ -27,47 +27,41 @@
         <ul class="nav-menu">
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li><a href="contact.html" class="nav-link active">Sign Up</a></li>
         </ul>
     </nav>
   </div>
+
   <!-- Main Content -->
-  <section id= "sign">
-	<h1 id="question"> Want To Be A Member? </h1>
-	<h3 id="head"> Sign Up </h3>
-	<form method="post" action="#" autocomplete="on">
-		<div id="fame">
-			<label id="ff"> First Name: <input type="text" id="fn" name="fname_field"> </label>
-		</div>
-		<div id="lname">
-			<label id="ll"> Last Name: <input type="text" id="ln" name="lname_field"> </label>
-		</div>
-		<div>
-			<input type ="radio" id="em" value="email" name="select">
-			<label for = "em"> To Get Email Messages </label>
-		</div>
-			<label id="ma"> Email: <input type="text" id="mail" name="email_field"> </label>
-		
-		<div>
-			<input type ="radio" id="ph" value="phone" name="select">
-			<label for = "ph"> To Get Text Messages  </label>
-		</div>
-			<label id="te"> Tel: <input type="text" id="tel" name="phone_field"> </label>
-		
-		<div>
-			<input type="submit" id="sub" value="Become A Member"/>
-			<input type="reset" id="can" value="Cancel"/>
-		</div>
-	</form>	
+  <section id="sign" class="overlay">
+    <div id="form-container">
+      <h3 id="question"> Want To Be A Member? </h3>
+	    <h4 id="head"> Sign Up </h4>
+      <form action="#null" method="POST" autocomplete="on">
+        <div class="label-input">
+          <label for="fname">First Name</label>
+          <input id="fname" type="text" name="fname-field" ">
+        </div>
+        <div class="label-input">
+          <label for="lname">Last Name</label>
+          <input id="lname" type="text" name="lname-field">
+        </div>
+        <div class="label-input">
+          <label for="phone">Phone</label>
+          <input id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" name="phone-field" placeholder="1234567890">
+        </div>
+        <button class="clear-dark" type="submit" name="submit" id="submit">Sign Up</button>
+      </form>
+    </div>
   </section>
+
   <!-- Footer -->
-  <footer id = "brand">
-	&copy;2021 The International Society for Universal Dialogue
+  <footer>
     <div class="icons">
       <ul>
-        <li class="fab fa-facebook-f"></li>
-        <li class="fab fa-linkedin-in"></li>
-        <li class="fab fa-google-plus-g"></li>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-linkedin-in"></i>
+        <i class="fab fa-google-plus-g"></i>
       </ul>
     </div>
   </footer>

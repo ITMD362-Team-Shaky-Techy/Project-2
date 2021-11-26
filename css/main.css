@@ -63,6 +63,17 @@ button{
   background: var(--primary);
   transition: all 0.4s ease-in-out;
 }
+.clear-dark{
+  border: 1px solid var(--dark-contrast);
+  border-radius: 5px;
+  color: var(--dark-contrast);
+  background: none;
+}
+.clear-dark:hover{
+  background: var(--dark-contrast);
+  color: var(--light-contrast);
+  transition: all 0.4s ease-in-out;
+}
 
 /* Navigation ******************************************************************/
 .nav-container{
@@ -117,6 +128,8 @@ button{
   line-height: 60px;
   width: 100%;
   display: table;
+  font-size: 30px;
+  margin-left: 1%;
 }
 .nav-link.active{
   background: var(--secondary-dark);
@@ -128,7 +141,7 @@ button{
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  background: var(--accent);
+  background: var(--light-contrast);
 }
 #mobile-menu{
   position: absolute;
@@ -194,6 +207,9 @@ button{
     background: none;
     color: var(--dark-contrast);
   }
+  .nav-link.nav-link.active:hover{
+    color: var(--dark-contrast);
+  }
   .nav-link:hover{
     color: var(--accent);
     transition: all 0.4s ease-out;
@@ -231,7 +247,11 @@ footer{
   font-size: 20px;
 }
 .icons i:hover{
-  color: var(--secondary-light);
+  color: var(--dark-contrast);
+  transition: all 0.4s ease-out;
+}
+.icons i:hover{
+  color: var(--dark-contrast);
   transition: all 0.4s ease-out;
 }
 @media only screen and (min-width: 768px){
@@ -307,11 +327,97 @@ footer{
 }
 
 /* About **************************************************************************/
-video {
-  float: right;
-  width: 50%;
+#aboutus{
+  width: 90%;
+  margin: 0 auto;
 }
-#about {
+
+#aboutus .container{
+  padding-top: 5%;
+  padding-bottom: 1%;
+}
+#aboutus .container-title{
+  padding-bottom: 5%;
+  font-weight: bold;
+}
+#aboutus p{
+  padding-top: 5%;
+  line-height: 1.3em;
+}
+#aboutus .background-box{
+  background-color: rgb(220, 214, 238);
+  width: 90%;
+  margin: 0 auto;
+}
+#aboutus h3{
+  text-align: center;
+}
+#aboutus .background-box h3{
+  padding-top: 3%;
+}
+#aboutus ul{
+  padding: 0 10%;
+  list-style: disc;
+  line-height: 1.3em;
+}
+
+
+@media only screen and (min-width: 768px){
+  /* 
+  TODO: 
+    * center video
+    * make video larger
+    * adjust font size and line height
+    * adjust paddings so everything fits on one page
+  */
+  
+  #aboutus p{
+    padding-top: 3%;
+    line-height: 1.3em;
+  }
+}
+@media only screen and (min-width: 1200px){
+  /* 
+  TODO: 
+    * use css grids to split about us section into left and right
+    * align contrainer items to left
+    * adjust font size and line height
+    * adjust paddings so everything fits on one page
+  */
+  #aboutus{
+    height: 87vh;
+  }
+  #aboutus .container{
+    padding-top: 2%;
+  }
+  #aboutus .container-title{
+    font-size: 2em;
+    padding-bottom: 2%;
+    font-weight: bold;
+  }
+  #aboutus #intro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #aboutus p{
+    font-size: 1em;
+    padding-top: 0.5%;
+    line-height: 1.5em;
+  }
+  #aboutus ul{
+    width: 50%;
+    margin: 0 auto;
+    line-height: 1.2em;
+    padding-bottom: 2%;
+  }
+  #aboutus li{
+    padding-bottom: 1%;
+  }
+}
+
+
+
+/* #about {
   margin: 35px 50px 35px 90px;
 }
 #intro {
@@ -323,18 +429,13 @@ video {
 #mission {
   margin: 10px 0 35px 90px;
 }
-.facts {
-  background-color: rgb(220, 214, 238);
-  width: 1100px;
-  padding: 30px;
-  margin: 30px 100px 0 90px;
-}
+
 #ul {
   margin: 20px 0 30px 50px;
   line-height: 40px;
   list-style: disc;
-}
-@media only screen and (min-width: 768px){
+} */
+/* @media only screen and (min-width: 768px){
   video {
     float: right;
     width: 60%;
@@ -392,123 +493,100 @@ video {
     line-height: 30px;
     list-style: disc;
   }
-}
+} */
 
 /* Contact **************************************************************************/
-#con{	background-color:var(--accent);	} 
 
 #sign{	
 	text-align: center;
-	padding: 3%;
-	background-color: #F8F6F0;
-	line-height:2.5em;
-	margin: 12%;
+	height: 87vh;
+  background: url('../img/world.jpg') center center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#form-container{
+  background-color: #F8F6F0;
+  width: 95%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+  position: relative;
+}
+#sign form{
+  padding: 5%;
+  margin:auto;
 }
 
 #question{
-  font-size:1.2em;}
-
-#fn{	
-	width:90%;
-	height:22px;
-	line-height:0.5em;
-}
-#ln{	
-	width:90%;
-	height:22px;
-	line-height:0.5em;
-}
-#mail {
-  margin-right:3.1%;
-	height:22px;
-	width:70%;
-}
-	
-#tel{	margin-right:0.56%;
-	height:22px;
-	width:70%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-#sub{	font-size:17px;
-	height:32px;
-	margin-right: 1.8%;
+#sign .label-input input{
+  display: block;
+  width: 100%;
+  margin: 8% auto;
+  height: 2rem;
+
+}
+#sign .label-input label{
+  display: block;
+  float:left;
+  font-size: 1.1rem;
+  color: var(--dark-contrast);
+  font-weight: 500;
+}
+#sign button{
+  margin-top: 5%;
+  padding: 2%;
 }
 
-#can{	font-size:17px;	
-	height:32px;
-}
-
-#brand{		
-	padding:2.5%;	
-	line-height:2.0em;
-}
-
-@media only screen and (min-width: 768px) {
-	
-	#sign{	
-		padding: 3.2%;
-		margin: 10%;
-	}
-	
-	#head{	
-		font-size:2.4em;
-		line-height:1.4em;
-		margin-bottom:0.5%;
-	}
-	
-	#ff{  font-size:1.2em;}
-	
-	#fn{	
-		height:22px;
-		line-height:0.5em;
-		width:50%;
-		margin-right:6.5%;
-		margin-bottom:2.5%;
-	}
-	
-	#ll{	font-size:1.2em;	}
-	
-	#ln{	
-		height:22px;
-		line-height:0.5em;
-		width:50%;
-		margin-right:6.5%;
-	}
-	
-	#ma{	font-size:1.2em;	}
-	
-	#mail{	
-	  margin-right:2.6%;
-		height:22px;
-		width:50%;
-	}
-	
-	#te{	font-size:1.2em;	}
-	
-	#tel{	
-		margin-left:1.16%;
-		height:22px;
-		width:50%;
-	}
-		
-}
-
-@media only screen and (min-width: 1200px) {
-	
-	#sign{	
-		width:40%;
-		padding: 3.0%;
-		margin: 8%;
+@media only screen and (min-width:768px){
+  #sign .label-input label{
+    padding-bottom: 1%;
   }
-	#con{
-    background-image: url("../img/world.jpg");	
-		background-size: cover;
-		background-repeat:no-repeat;
-		background-position:right;		
-	}
-	#brand{		
-		padding:2.7%;	
-		line-height:1.0em;
-	}
 }
+
+@media only screen and (min-width:1200px){
+  #form-container{
+    width: 70%;
+  }
+  #question{
+    padding-bottom: 2%;
+  }
+  #head{
+    padding-bottom: 2%;
+  }
+  #sign form{
+    width: 100%;
+    padding:0;
+  }
+  .label-input {
+    width: 90%;
+    margin-bottom: 1%;
+  }
+  #sign .label-input input{
+    padding-bottom: none;
+    display: inline;
+    min-width: none;
+    width: 40%;
+    margin: 0;
+    height: 1.6rem;
+  }
+  #sign .label-input label{
+    font-size: 1.667em;
+    display: inline;
+    width: 15%;
+    margin-left: 15%;
+  }
+  #sign button{
+    margin-bottom: 3%;
+  }
+  
+}
+
+
+
 
