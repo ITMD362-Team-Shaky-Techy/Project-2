@@ -36,21 +36,29 @@
   <section id="sign" class="overlay">
     <div id="form-container">
       <h3 id="question"> Want To Be A Member? </h3>
-	    <h4 id="head"> Sign Up </h4>
+	  <h4 id="head"> Sign Up </h4>
       <form action="#null" method="POST" autocomplete="on">
         <div class="label-input">
-          <label for="fname">First Name</label>
-          <input id="fname" type="text" name="fname-field" ">
+          <label for="fullname">Full Name</label>
+          <input id="fullname" type="text" name="fullname-field">
         </div>
+		<div>
+		 <input type ="radio" id="em" value="email" name="select">
+		 <label for = "em"> To Get Email Messages </label>
+      </div>
         <div class="label-input">
-          <label for="lname">Last Name</label>
-          <input id="lname" type="text" name="lname-field">
+          <label for="email">Email</label>
+          <input id="mail" type="text" placeholder="Example@gmail.com" name="email-field">
         </div>
+		 <div>
+         <input type ="radio" id="ph" value="phone" name="select">
+         <label for = "ph"> To Get Text Messages  </label>
+      </div>
         <div class="label-input">
           <label for="phone">Phone</label>
           <input id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" name="phone-field" placeholder="1234567890">
         </div>
-        <button class="clear-dark" type="submit" name="submit" id="submit">Sign Up</button>
+        <button class="clear-dark" type="submit" name="submit" id="submit">Become A Member</button>
       </form>
     </div>
   </section>
