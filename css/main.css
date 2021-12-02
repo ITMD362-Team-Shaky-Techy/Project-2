@@ -498,8 +498,8 @@ footer{
 /* Contact **************************************************************************/
 
 #sign{	
-	text-align: center;
-	height: 87vh;
+  text-align: center;
+  height: 87vh;
   background: url('../img/world.jpg') center center no-repeat;
   background-size: cover;
   position: relative;
