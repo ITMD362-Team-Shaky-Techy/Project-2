@@ -10,24 +10,17 @@ menu.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded',function(){
 	console.log ("It loaded");
-	document.getElementById('sub').addEventListener('click', function () {
-		var f = document.getElementById('fn').value;
-		var l = document.getElementById('ln').value;
-		if (isNaN(f)) {
-			alert("No numbers in here");
+	document.getElementById('submit').addEventListener('click', function () {
+		var full = document.getElementById('fullname').value;
+	
+		if ( full === "") {
+			alert("Enter Full Name Please");
 		}
-		else if ( f === "") {
-			alert("Enter Name Please");
-		}
-		if (isNaN(l)) {
-			alert("No numbers in here");
-		}
-		else if ( l === "") {
-			alert("Enter Last Name Please");
+		else {
+			alert ( "Hello " + full + " You are now a member");
 		}
 	});
-	document.getElementById('mail').disabled=true;
-	document.getElementById('tel').disabled=true;
-	
-	
+		document.getElementById('mail').disabled=true;
+		document.getElementById('phone').disabled=true;
+		
 	});
