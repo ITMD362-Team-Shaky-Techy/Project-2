@@ -340,6 +340,11 @@ footer{
   padding-bottom: 5%;
   font-weight: bold;
 }
+#intro-video{
+  width: 90%;
+  display: block;
+  margin: 10% 30% auto -40%;
+}
 #aboutus p{
   padding-top: 5%;
   line-height: 1.3em;
