@@ -452,7 +452,7 @@ footer{
   width: 95%;
   margin: 0 auto;
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-60%);
   position: relative;
 }
@@ -477,7 +477,7 @@ footer{
 
 #sign .label-input input{
   display: block;
-  width: 100%;
+  width: 90%;
   margin: 8% auto;
   height: 2rem;
 
