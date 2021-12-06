@@ -343,7 +343,7 @@ footer{
 #intro-video{
   width: 90%;
   display: block;
-  margin: 3% 0% 3% 30%;
+  margin: 3% 0% 3% 0;
 }
 #intro-text{
   margin: auto;
@@ -377,18 +377,11 @@ footer{
 
 
 @media only screen and (min-width: 768px){
-  /* 
-  TODO: 
-    * center video
-    * make video larger
-    * adjust font size and line height
-    * adjust paddings so everything fits on one page
-  */
-  
   #intro-video{
     width: 60%;
     display: block;
-    margin: 3% 0% 3% 5%;
+    margin: 3% 0% 3% 0;
+    padding-left: 20%;
   }
   #aboutus h3{
     font-size: 1.875em;
@@ -406,16 +399,8 @@ footer{
   #aboutus li{
     padding-bottom: 3%;
   }
-
 }
 @media only screen and (min-width: 1200px){
-  /* 
-  TODO: 
-    * use css grids to split about us section into left and right
-    * align container items to left
-    * adjust font size and line height
-    * adjust paddings so everything fits on one page
-  */
   #aboutus{
     height: 87vh;
   }
@@ -430,7 +415,8 @@ footer{
   #intro-video{
     width: 60%;
     display: block;
-    margin: 2% 0% 3% 28%;
+    margin: 2% 0% 3% 0;
+    padding-left: 25%;
   }
   #aboutus #intro{
     font-size: 1em;
