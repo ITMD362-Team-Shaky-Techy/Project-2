@@ -396,6 +396,9 @@ footer{
   #aboutus .background-box{
     margin: 0 auto 5% auto;
   }
+  #aboutus ul{
+    line-height: 1.5em;
+  }
 
 }
 @media only screen and (min-width: 1200px){
