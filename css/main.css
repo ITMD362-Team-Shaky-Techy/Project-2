@@ -345,6 +345,9 @@ footer{
   display: block;
   margin: 10% 30% auto -40%;
 }
+#intro-text{
+  margin: auto;
+}
 #aboutus p{
   padding-top: 5%;
   line-height: 1.3em;
@@ -401,8 +404,9 @@ footer{
     font-weight: bold;
   }
   #aboutus #intro{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    font-size: 1em;
+    padding-top: 0.5%;
+    line-height: 1.5em;
   }
   #aboutus p{
     font-size: 1em;
