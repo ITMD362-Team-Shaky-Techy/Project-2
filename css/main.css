@@ -415,12 +415,13 @@ footer{
   #aboutus{
     height: 87vh;
   }
+  
   #aboutus .container{
     padding-top: 2%;
   }
   #aboutus .container-title{
     font-size: 2em;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
     font-weight: bold;
   }
   #intro-video{
