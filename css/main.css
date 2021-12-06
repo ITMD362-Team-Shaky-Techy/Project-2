@@ -399,6 +399,9 @@ footer{
   #aboutus ul{
     line-height: 1.5em;
   }
+  #aboutus li{
+    padding-bottom: 3%;
+  }
 
 }
 @media only screen and (min-width: 1200px){
@@ -417,8 +420,13 @@ footer{
   }
   #aboutus .container-title{
     font-size: 2em;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
     font-weight: bold;
+  }
+  #intro-video{
+    width: 60%;
+    display: block;
+    margin: 3% 0% 3% 20%;
   }
   #aboutus #intro{
     font-size: 1em;
@@ -431,7 +439,7 @@ footer{
     line-height: 1.5em;
   }
   #aboutus ul{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     line-height: 1.2em;
     padding-bottom: 2%;
