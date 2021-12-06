@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded',function(){
 		}
 		if (ma === "") {
 			alert( "Enter your email please");
+		}
 		else {
 			alert (" A Email was sent to " + ma);
 		}
