@@ -337,17 +337,27 @@ footer{
   padding-bottom: 1%;
 }
 #aboutus .container-title{
-  padding-bottom: 5%;
+  padding-bottom: 3%;
   font-weight: bold;
+  padding-top: 2%;
+}
+#intro-video{
+  width: 90%;
+  display: block;
+  margin: 3% 0% 3% 30%;
+}
+#intro-text{
+  margin: auto;
 }
 #aboutus p{
-  padding-top: 5%;
+  padding-top: 3%;
   line-height: 1.3em;
+  padding-bottom: 1%;
 }
 #aboutus .background-box{
   background-color: rgb(220, 214, 238);
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 2% auto;
 }
 #aboutus h3{
   text-align: center;
@@ -371,10 +381,28 @@ footer{
     * adjust paddings so everything fits on one page
   */
   
+  #intro-video{
+    width: 60%;
+    display: block;
+    margin: 3% 0% 3% 5%;
+  }
+  #aboutus h3{
+    font-size: 1.875em;
+  }
   #aboutus p{
     padding-top: 3%;
     line-height: 1.3em;
   }
+  #aboutus .background-box{
+    margin: 0 auto 5% auto;
+  }
+  #aboutus ul{
+    line-height: 1.5em;
+  }
+  #aboutus li{
+    padding-bottom: 3%;
+  }
+
 }
 @media only screen and (min-width: 1200px){
   /* 
@@ -387,17 +415,24 @@ footer{
   #aboutus{
     height: 87vh;
   }
+  
   #aboutus .container{
     padding-top: 2%;
   }
   #aboutus .container-title{
     font-size: 2em;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
     font-weight: bold;
   }
+  #intro-video{
+    width: 60%;
+    display: block;
+    margin: 3% 0% 3% 20%;
+  }
   #aboutus #intro{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    font-size: 1em;
+    padding-top: 0.5%;
+    line-height: 1.5em;
   }
   #aboutus p{
     font-size: 1em;
@@ -405,7 +440,7 @@ footer{
     line-height: 1.5em;
   }
   #aboutus ul{
-    width: 50%;
+    width: 80%;
     margin: 0 auto;
     line-height: 1.2em;
     padding-bottom: 2%;
