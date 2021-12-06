@@ -336,8 +336,7 @@ footer{
   padding-top: 5%;
   padding-bottom: 1%;
 }
-#aboutus .container-title{
-  padding-bottom: 3%;
+#aboutus #intro .container-title{
   font-weight: bold;
   padding-top: 2%;
 }
@@ -358,6 +357,11 @@ footer{
   background-color: rgb(220, 214, 238);
   width: 90%;
   margin: 0 auto 2% auto;
+}
+#aboutus #facts .container-title{
+  padding-bottom: 2%;
+  font-weight: bold;
+  padding-top: 2%;
 }
 #aboutus h3{
   text-align: center;
@@ -415,7 +419,6 @@ footer{
   #aboutus{
     height: 87vh;
   }
-  
   #aboutus .container{
     padding-top: 2%;
   }
@@ -427,7 +430,7 @@ footer{
   #intro-video{
     width: 60%;
     display: block;
-    margin: 3% 0% 3% 28%;
+    margin: 2% 0% 3% 28%;
   }
   #aboutus #intro{
     font-size: 1em;
@@ -441,7 +444,6 @@ footer{
   }
   #aboutus ul{
     width: 80%;
-    margin: 0 auto;
     line-height: 1.2em;
     padding-bottom: 2%;
   }
