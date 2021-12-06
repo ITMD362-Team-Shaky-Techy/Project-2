@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded',function(){
 		else {
 			alert ("Thank you for entering your phone number, you will receive a notification shortly");
 		}
+		
 	});
 		
 		
