@@ -502,9 +502,7 @@ footer{
     margin-bottom: 1%;
   }
   #sign .label-input input{
-    padding-bottom: none;
     display: inline;
-    min-width: none;
     width: 40%;
     margin: 0;
     height: 1.6rem;
