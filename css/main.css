@@ -223,7 +223,6 @@ button{
 /* Footer ******************************************************************/
 footer{
   width: 100%;
-  bottom: 0;
   background-color: var(--primary);
   text-align: center;
 }
@@ -240,17 +239,17 @@ footer{
 .icons li{
   align-self: center;
 }
-.icons i{
+.icons li{
   cursor: pointer;
   justify-self: center;
   color: var(--light-contrast);
   font-size: 20px;
 }
-.icons i:hover{
+.icons li:hover{
   color: var(--dark-contrast);
   transition: all 0.4s ease-out;
 }
-.icons i:hover{
+.icons li:hover{
   color: var(--dark-contrast);
   transition: all 0.4s ease-out;
 }
@@ -258,8 +257,15 @@ footer{
   .icons{
     width: 20%;
   }
-  .icons i{
+  .icons li{
     font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1200px){
+  footer{
+    position: absolute;
+    bottom: 0;
+    height: 6vh;
   }
 }
 
@@ -329,119 +335,81 @@ footer{
 /* About **************************************************************************/
 #aboutus{
   width: 90%;
-  margin: 0 auto;
+  margin: auto auto;
 }
-
 #aboutus .container{
   padding-top: 5%;
-  padding-bottom: 1%;
 }
-#aboutus #intro .container-title{
+#aboutus .container-title{
+  padding-top: 5%;
+  padding-bottom: 5%;
   font-weight: bold;
-  padding-top: 2%;
 }
-#intro-video{
-  width: 90%;
-  display: block;
-  margin: 3% 0% 3% 0;
+#aboutus #intro-video{
+  padding-top: 20px;
+  margin: 0 auto;
+  text-align: center;
 }
-#intro-text{
-  margin: auto;
+#aboutus video{
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 #aboutus p{
-  padding-top: 3%;
+  padding-top: 4%;
   line-height: 1.3em;
-  padding-bottom: 1%;
 }
 #aboutus .background-box{
   background-color: rgb(220, 214, 238);
   width: 90%;
-  margin: 0 auto 2% auto;
-}
-#aboutus #facts .container-title{
-  padding-bottom: 2%;
-  font-weight: bold;
-  padding-top: 2%;
+  margin: 0 auto;
 }
 #aboutus h3{
   text-align: center;
 }
-#aboutus .background-box h3{
-  padding-top: 3%;
+#aboutus #bottom-el{
+  padding-bottom: 20px;
 }
-#aboutus ul{
-  padding: 0 10%;
-  list-style: disc;
-  line-height: 1.3em;
-}
-
-
 @media only screen and (min-width: 768px){
-  #intro-video{
-    width: 60%;
-    display: block;
-    margin: 3% 0% 3% 0;
-    padding-left: 15%;
+  #aboutus .container{
+    padding-top: 2%;
   }
-  #aboutus h3{
+  #aboutus .container-title{
     font-size: 1.875em;
-  }
-  #aboutus #mission h3{
-    font-weight: bold;
+    padding-bottom: 0;
   }
   #aboutus p{
-    padding-top: 3%;
-    line-height: 1.3em;
-  }
-  #aboutus .background-box{
-    margin: 0 auto 5% auto;
-  }
-  #aboutus ul{
+    padding-top: 2%;
     line-height: 1.5em;
-  }
-  #aboutus li{
-    padding-bottom: 3%;
   }
 }
 @media only screen and (min-width: 1200px){
   #aboutus{
     height: 87vh;
+    padding-bottom: 6vh;
   }
   #aboutus .container{
     padding-top: 2%;
   }
+  #aboutus video{
+    width: 70%;
+  }
   #aboutus .container-title{
     font-size: 2em;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
     font-weight: bold;
   }
-  #intro-video{
-    width: 60%;
-    display: block;
-    margin: 2% 0% 3% 0;
-    padding-left: 25%;
-  }
   #aboutus #intro{
-    font-size: 1em;
-    padding-top: 0.5%;
-    line-height: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   #aboutus p{
     font-size: 1em;
-    padding-top: 0.5%;
+    padding-top: 0;
     line-height: 1.5em;
-  }
-  #aboutus ul{
-    width: 80%;
-    line-height: 1.2em;
-    padding-bottom: 2%;
-  }
-  #aboutus li{
-    padding-bottom: 1%;
   }
 }
 /* Contact **************************************************************************/
-
 #sign{	
   text-align: center;
   height: 87vh;
@@ -449,7 +417,6 @@ footer{
   background-size: cover;
   position: relative;
 }
-
 #form-container{
   background-color: #F8F6F0;
   width: 95%;
@@ -463,7 +430,6 @@ footer{
   padding: 5%;
   margin:auto;
 }
-
 #em {
   width:20px;
   height:20px;
@@ -472,18 +438,21 @@ footer{
   width:20px;
   height:20px;
 }
-
 #question{
   padding-top: 5%;
   padding-bottom: 5%;
 }
-
+#sign .label-input{
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+#sign .radio{
+  padding-top: 5px;
+}
 #sign .label-input input{
   display: block;
   width: 90%;
-  margin: 8% auto;
   height: 2rem;
-
 }
 #sign .label-input label{
   display: block;
@@ -498,8 +467,8 @@ footer{
 }
 
 @media only screen and (min-width:768px){
-  #sign .label-input label{
-    padding-bottom: 1%;
+  #sign .label-input input{
+    width: 100%;
   }
 }
 
@@ -517,7 +486,9 @@ footer{
     width: 100%;
     padding:0;
   }
-  
+  #sign .radio{
+    padding-bottom: 10px;
+  }
   #em {
   width:15px;
   height:15px;
