@@ -333,23 +333,24 @@ footer{
 }
 #aboutus .container{
   padding-top: 5%;
-  padding-bottom: 1%;
+  padding-bottom: 20px;
 }
 #aboutus .container-title{
   padding-bottom: 5%;
   font-weight: bold;
 }
 #aboutus #intro-video{
+  padding-top: 20px;
   margin: 0 auto;
   text-align: center;
 }
 #aboutus video{
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 #aboutus p{
-  padding-top: 5%;
+  padding-top: 4%;
   line-height: 1.3em;
 }
 #aboutus .background-box{
@@ -369,24 +370,23 @@ footer{
   line-height: 1.4em;
   padding-bottom: 20px;
 }
-
+#aboutus li{
+  padding-top: 10px;
+}
 @media only screen and (min-width: 768px){
-  #intro-video{
-    width: 80%;
-    display: block;
-  }
-  #aboutus h3{
+  #aboutus .container-title{
     font-size: 1.875em;
+    padding-bottom: 0;
   }
   #aboutus p{
-    padding-top: 3%;
-    line-height: 1.3em;
+    padding-top: 2%;
+    line-height: 1.5em;
   }
   #aboutus .background-box{
     margin: 0 auto 5% auto;
   }
   #aboutus ul{
-    line-height: 1.5em;
+    line-height: 1.4em;
   }
   #aboutus li{
     padding-bottom: 3%;
@@ -401,27 +401,21 @@ footer{
   }
   #aboutus .container-title{
     font-size: 2em;
-    padding-bottom: 1%;
+    padding-bottom: 2%;
     font-weight: bold;
   }
-  #intro-video{
-    width: 60%;
-    display: block;
-    margin: 2% 0% 3% 0;
-    padding-left: 25%;
-  }
   #aboutus #intro{
-    font-size: 1em;
-    padding-top: 0.5%;
-    line-height: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   #aboutus p{
     font-size: 1em;
-    padding-top: 0.5%;
+    padding-top: 0;
     line-height: 1.5em;
   }
   #aboutus ul{
-    width: 80%;
+    width: 50%;
+    margin: 0 auto;
     line-height: 1.2em;
     padding-bottom: 2%;
   }
