@@ -37,23 +37,23 @@
     <div id="form-container">
       <h3 id="question"> Want To Be A Member? </h3>
 	    <h4 id="head"> Sign Up </h4>
-      <form action="#null" method="POST" autocomplete="on">
+      <form name="signup" action="#null" method="POST" autocomplete="on">
         <div class="label-input">
           <label for="fullname">Full Name</label>
-          <input id="fullname" type="text" placeholder="Fullname" name="fullname-field">
+          <input id="fullname" type="text" placeholder="Full Name" name="fullname-field">
         </div>
-        <div>
+        <div class="radio">
           <input type ="radio" id="em" value="email" name="select">
-          <label for = "em"> To Get Email Messages </label>
+          <label for = "em"> Get Emails</label>
+        </div>
+        <div class="radio">
+          <input type ="radio" id="ph" value="phone" name="select">
+          <label for = "ph">Get Texts</label>
         </div>
         <div class="label-input">
           <label for="email">Email</label>
           <input id="mail" type="text" placeholder="Example@gmail.com" name="email-field">
         </div>
-        <div>
-          <input type ="radio" id="ph" value="phone" name="select">
-          <label for = "ph"> To Get Text Messages  </label>
-          </div>
         <div class="label-input">
           <label for="phone">Phone</label>
           <input id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" name="phone-field" placeholder="1234567890">

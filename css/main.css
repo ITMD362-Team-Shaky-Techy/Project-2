@@ -410,7 +410,6 @@ footer{
   }
 }
 /* Contact **************************************************************************/
-
 #sign{	
   text-align: center;
   height: 87vh;
@@ -418,7 +417,6 @@ footer{
   background-size: cover;
   position: relative;
 }
-
 #form-container{
   background-color: #F8F6F0;
   width: 95%;
@@ -432,7 +430,6 @@ footer{
   padding: 5%;
   margin:auto;
 }
-
 #em {
   width:20px;
   height:20px;
@@ -441,18 +438,21 @@ footer{
   width:20px;
   height:20px;
 }
-
 #question{
   padding-top: 5%;
   padding-bottom: 5%;
 }
-
+#sign .label-input{
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+#sign .radio{
+  padding-top: 5px;
+}
 #sign .label-input input{
   display: block;
   width: 90%;
-  margin: 8% auto;
   height: 2rem;
-
 }
 #sign .label-input label{
   display: block;
@@ -467,8 +467,8 @@ footer{
 }
 
 @media only screen and (min-width:768px){
-  #sign .label-input label{
-    padding-bottom: 1%;
+  #sign .label-input input{
+    width: 100%;
   }
 }
 
@@ -486,7 +486,9 @@ footer{
     width: 100%;
     padding:0;
   }
-  
+  #sign .radio{
+    padding-bottom: 10px;
+  }
   #em {
   width:15px;
   height:15px;

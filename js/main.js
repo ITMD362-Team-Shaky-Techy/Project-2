@@ -6,16 +6,36 @@ menu.addEventListener('click', () => {
   menu.classList.toggle('is-active');
   menuLinks.classList.toggle('active');
 })
-//Form Control
 
+//Radio Buttons
+var radios = document.forms["signup"].elements["select"];
+var emailInput = document.getElementById('mail');
+var phoneInput =document.getElementById('phone');
+
+for(select in radios) {
+  radios[select].onclick = function() {
+      if(this.value == "email"){
+        phoneInput.disabled = true;
+        emailInput.disabled = false;
+      }
+      else if(this.value = "phone"){
+        phoneInput.disabled = false;
+        emailInput.disabled = true;
+      }
+  }
+}
+
+//Form Control
 document.addEventListener('DOMContentLoaded',function(){
 	console.log ("It loaded");
 	document.getElementById('submit').addEventListener('click', function () {
+
 		var full = document.getElementById('fullname').value;
+
 		var  ma = document.getElementById('mail').value;
 		var ph =document.getElementById('phone').value;
 	
-		if ( full === "") {
+		if (full === "") {
 			alert("Enter Full Name Please");
 		}
 		else {
