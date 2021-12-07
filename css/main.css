@@ -239,17 +239,17 @@ footer{
 .icons li{
   align-self: center;
 }
-.icons i{
+.icons li{
   cursor: pointer;
   justify-self: center;
   color: var(--light-contrast);
   font-size: 20px;
 }
-.icons i:hover{
+.icons li:hover{
   color: var(--dark-contrast);
   transition: all 0.4s ease-out;
 }
-.icons i:hover{
+.icons li:hover{
   color: var(--dark-contrast);
   transition: all 0.4s ease-out;
 }
@@ -257,7 +257,7 @@ footer{
   .icons{
     width: 20%;
   }
-  .icons i{
+  .icons li{
     font-size: 30px;
   }
 }
