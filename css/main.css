@@ -331,37 +331,31 @@ footer{
   width: 90%;
   margin: 0 auto;
 }
-
 #aboutus .container{
   padding-top: 5%;
   padding-bottom: 1%;
 }
-#aboutus #intro .container-title{
+#aboutus .container-title{
+  padding-bottom: 5%;
   font-weight: bold;
-  padding-top: 2%;
 }
-#intro-video{
+#aboutus #intro-video{
+  margin: 0 auto;
+  text-align: center;
+}
+#aboutus video{
+  margin: 0 auto;
   width: 90%;
-  display: block;
-  margin: 3% 0% 3% 0;
-}
-#intro-text{
-  margin: auto;
+  height: auto;
 }
 #aboutus p{
-  padding-top: 3%;
+  padding-top: 5%;
   line-height: 1.3em;
-  padding-bottom: 1%;
 }
 #aboutus .background-box{
   background-color: rgb(220, 214, 238);
   width: 90%;
-  margin: 0 auto 2% auto;
-}
-#aboutus #facts .container-title{
-  padding-bottom: 2%;
-  font-weight: bold;
-  padding-top: 2%;
+  margin: 0 auto;
 }
 #aboutus h3{
   text-align: center;
@@ -372,22 +366,17 @@ footer{
 #aboutus ul{
   padding: 0 10%;
   list-style: disc;
-  line-height: 1.3em;
+  line-height: 1.4em;
+  padding-bottom: 20px;
 }
-
 
 @media only screen and (min-width: 768px){
   #intro-video{
-    width: 60%;
+    width: 80%;
     display: block;
-    margin: 3% 0% 3% 0;
-    padding-left: 15%;
   }
   #aboutus h3{
     font-size: 1.875em;
-  }
-  #aboutus #mission h3{
-    font-weight: bold;
   }
   #aboutus p{
     padding-top: 3%;
